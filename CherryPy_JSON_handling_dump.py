@@ -11,10 +11,10 @@ json_file_name = 'CherryPy_JSON_handling_dump.json'
 json_file_path = os.path.join(script_dir, json_file_name)
 
 # create a JSON file and write data to it
-data = {'temperature': 25.5, 'humidity': 60} # data to be written to JSON file (dictionary)
+data = {'temperature': 25.5, 'humidity': 60 } # data to be written to JSON file (dictionary)
 # Save the JSON data to the file
-with open(json_file_path, 'a') as json_file:
-    json.dump(data, json_file, indent=4)  # indent for pretty printing (optional)
+with open(json_file_path, 'w') as json_file_data:
+    json.dump(data, json_file_data, indent=4)  # indent for pretty printing (optional)
 
 
 # CherryPy_JSON_handling_dump.json will contain:
