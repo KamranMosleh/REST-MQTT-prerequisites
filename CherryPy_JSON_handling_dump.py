@@ -2,7 +2,7 @@ import json
 import os  # to go beyond the Python environment for file path handling, and file management.
 # e.g.: create or delete files or folders, rename files, and even run other programs.
 
-# Get the path of the current script
+# Get the current script's path for device and directory independency
 script_path = os.path.abspath(__file__)
 # Get the current directory of the script
 script_dir = os.path.dirname(script_path)
