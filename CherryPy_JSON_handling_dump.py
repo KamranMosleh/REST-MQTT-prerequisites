@@ -1,3 +1,5 @@
+## dump --> Serializing to a File-like Object
+
 import json
 import os  # to go beyond the Python environment for file path handling, and file management.
 # e.g.: create or delete files or folders, rename files, and even run other programs.
